@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Coach</title>
+    <link rel="stylesheet" href="/static/style.css?v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="setup-screen">
+        <h1>AI Interview Prep</h1>
+        <p class="subtitle">Enter the job role you want to practice for.</p>
+        <select id="jobRole">
+            <option value="AI Engineer">AI Engineer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="Product Manager">Product Manager</option>
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Full Stack Developer">Full Stack Developer</option>
+            <option value="Mobile App Developer">Mobile App Developer</option>
+            <option value="DevOps Engineer">DevOps Engineer</option>
+            <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+            <option value="Software Architect">Software Architect</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="UX/UI Designer">UX/UI Designer</option>
+            <option value="Cloud Architect">Cloud Architect</option>
+            <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+            <option value="Database Administrator">Database Administrator</option>
+            <option value="Network Engineer">Network Engineer</option>
+            <option value="System Administrator">System Administrator</option>
+            <option value="Game Developer">Game Developer</option>
+            <option value="Blockchain Developer">Blockchain Developer</option>
+            <option value="Technical Writer">Technical Writer</option>
+        </select>
+        <select id="questionCount">
+            <option value="3">3 Questions</option>
+            <option value="5">5 Questions</option>
+            <option value="10">10 Questions</option>
+        </select>
+        <button onclick="startInterview()">Start Interview</button>
+    </div>
+
+    <div id="chat-screen">
+        <div id="header">
+            <h2 id="role-display">Interview</h2>
+            <span id="status">● Live</span>
+        </div>
+
+        <div id="messages">
+        </div>
+
+        <div id="input-area">
+            <input type="text" id="msgInput" placeholder="Type your answer..." disabled>
+            <button onclick="sendMsg()" id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js?v=2"></script>
+</body>
+
+</html>
