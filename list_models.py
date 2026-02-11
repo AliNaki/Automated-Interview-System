@@ -5,7 +5,7 @@ import requests
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
-# If api_key is None, try to read from .env manually just in case
+
 if not api_key:
     print("API Key not found in env")
 
