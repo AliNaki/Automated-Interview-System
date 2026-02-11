@@ -17,6 +17,8 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    padding-bottom: 15vh;
+    box-sizing: border-box;
 }
 
 /* Setup Screen */
